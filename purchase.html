@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Damara</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+     <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+     <header>
+          <nav>
+               <img src="public/img/damara logo.jpg" alt="">
+               <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="purchase.html">Purchase</a></li>
+                    <li><a href="process.html">Processing</a></li>
+                    <li><a href="sale.html">Sale</a></li>
+               </ul>
+          </nav>
+     </header>
+     <main>
+          <aside></aside>
+          <article>
+               <h1>Damara General Merchants and Contractors Business Records</h1>
+               <!--<div class="wrapper">
+                    <h2>Purchase</h2>
+                    <div class="wrap">
+                         <form action="">
+                              <label for="">Item</label>
+                              <input type="text"><br>
+                              <label for="">Units</label>
+                              <input type="number"><br>
+                              <label for="">Amount</label>
+                              <input type="number"><br><br>
+
+                              <div class="total"></div>
+
+                              <input class="btn btn-success" type="submit" value="Submit">
+                         </form>
+                    </div>
+               </div>-->
+
+               <div class="wrapper">
+                    <h2>Purchase</h2>
+                    <div class="wrap">
+                         <div>
+                                   <button class="btn btn-primary" onclick="item()">Click Item</button>
+                         </div>
+                         <div>
+                              <button class="btn btn-primary" onclick="units()">Click Units</button>
+                         </div>
+                         <div>
+                              <button class="btn btn-primary" onclick="amount()">Click Amount</button>
+                         </div>
+                         <div>
+                              <button class="btn btn-danger" onclick="reset()">Reset</button>
+                         </div>
+                         <div>
+                              <button class="btn btn-warning" onclick="hide()">Hide</button>
+                         </div>
+                    </div>
+                    <div class="container" id="default">
+                         <h3><p class="foo">Item:</p><div class="item" id="item"></div></h3>
+                         <h3><p class="foo">Units:</p><div class="unit" id="unit"></div></h3> 
+                         <h3><p class="foo">Amount:</p><div class="amount" id="amount"></div></h3>
+                         <!--<div class="foo" id="result"></div>-->
+                    </div>
+               </div>
+
+               <div id="date"></div>
+
+               <div class="btn">
+                    <button id="print" class="btn btn-primary" onclick="window.print()" onclick="remove()">Print</button>
+               </div>
+
+          </article>
+          
+     </main>
+
+     <footer>
+          &copy; Kamel@DGMC 2022
+     </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+     <script src="public/js/index.js"></script>
+
+</body>
+</html>

@@ -47,7 +47,6 @@ nav > ul > li {
      margin: 0 5px 0 5px;
 }
 
-
 h1 {
      color: #42770c;
      margin-top: 75px;
@@ -62,15 +61,13 @@ h2 {
 .wrapper {
      
      width: 50%;
-     margin: 20px 23.5%;
+     margin: 20px 25%;
      background-color: #c8e5ee;
      padding: 20px;
      border-radius: 8px;
 }
 
-
-
-button {
+#input {
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -89,6 +86,13 @@ button a {
      color: #42770c;
 }
 
+.container {
+     display: flex;
+     flex-wrap: nowrap;
+     flex-direction: column;
+     justify-content: center;
+}
+
 #date {
      margin-left: 23.5%;
      width: 50%;
@@ -96,7 +100,9 @@ button a {
 }
 
 .btn {
-     text-align: center;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
 }
 
 @page {

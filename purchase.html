@@ -3,7 +3,7 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Damara</title>
+     <title>Purchase</title>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
      <link rel="stylesheet" href="public/css/style.css">
 </head>
@@ -23,68 +23,51 @@
           <aside></aside>
           <article>
                <h1>Damara General Merchants and Contractors Business Records</h1>
-               <!--<div class="wrapper">
+
+               <div class="wrapper" id="wrapper">
                     <h2>Purchase</h2>
-                    <div class="wrap">
-                         <form action="">
-                              <label for="">Item</label>
-                              <input type="text"><br>
-                              <label for="">Units</label>
-                              <input type="number"><br>
-                              <label for="">Amount</label>
-                              <input type="number"><br><br>
-
-                              <div class="total"></div>
-
-                              <input class="btn btn-success" type="submit" value="Submit">
-                         </form>
+                    <div id="review" class="container d-none">
+                         <div id="input">
+                              <button id="rand-btn" class="btn btn-primary" onclick="randomNum()">Get transaction Id</button>
+                         </div>                        
+                         <div id="input">
+                                   <button id="item-btn" class="btn btn-primary" onclick="item()">Insert Item</button>
+                         </div>                         
+                         <div id="input">
+                              <button id="unit-btn" class="btn btn-primary" onclick="units()">Insert Units</button>
+                         </div>                        
+                         <div id="input">
+                              <button id="amount-btn" class="btn btn-primary" onclick="amount()">Insert Amount</button>
+                         </div>                         
+                         <div id="input">
+                              <button id="person-btn" class="btn btn-warning" onclick="person()">Enter your name</button>
+                         </div>
+                         <div id="input">
+                              <button id="reset-btn" class="btn btn-danger" onclick="reset()">Reset</button>
+                         </div>                                                                       
                     </div>
-               </div>-->
-
-               <div class="wrapper">
-                    <h2>Purchase</h2>
-                    <div class="wrap">
-                         <div>
-                              <button id="input" class="btn btn-primary" onclick="randomNum()">Get transaction Id</button>
-                         </div>
-                         <div>
-                                   <button id="input" class="btn btn-primary" onclick="item()">Insert Item</button>
-                         </div>
-                         <div>
-                              <button id="input" class="btn btn-primary" onclick="units()">Insert Units</button>
-                         </div>
-                         <div>
-                              <button id="input" class="btn btn-primary" onclick="amount()">Insert Amount</button>
-                         </div>
-                         <div>
-                              <button id="input" class="btn btn-primary" onclick="person()">Enter your name</button>
-                         </div>
-                         <div>
-                              <button id="input" class="btn btn-danger" onclick="reset()">Reset</button>
-                         </div>
-                         <div>
-                              <button id="input" class="btn btn-warning" onclick="hide()">Hide</button>
-                         </div>
-                         
-                    </div>
+                    <div id="add" class="container">
+                         <div id="input">
+                              <button id="see-review" class="btn btn-success">VIEW</button>
+                         </div>            
+                    </div>  
                     <div class="container" id="default">
-                         <h3><p class="foo">Transaction Id:<div id="transact"></div></p></h3>
-                         <h3><p class="foo">Item:</p><div class="item" id="item"></div></h3>
-                         <h3><p class="foo">Units:</p><div class="unit" id="unit"></div></h3> 
-                         <h3><p class="foo">Amount (N):</p><div class="amount" id="amount"></div></h3>
-                         <h3><p class="foo">Reciept generated by:</p><div class="amount" id="name"></div></h3>
+                         <h3><p class="foo">Transaction Id:<div id="transact"></div></p></h3><hr>
+                         <h3><p class="foo">Item:</p><div class="item" id="item"></div></h3><hr>
+                         <h3><p class="foo">Units:</p><div class="unit" id="unit"></div></h3><hr> 
+                         <h3><p class="foo">Amount (N):</p><div class="amount" id="amount"></div></h3><hr>
+                         <h3><p class="foo">Reciept generated by:</p><div class="name" id="name"></div></h3><hr>
                          <!--<div class="foo" id="result"></div>-->
                     </div>
                </div>
-
                <div id="date"></div>
-
-               <div class="btn">
-                    <button id="print" class="btn btn-primary" onclick="window.print()" onclick="remove()">Print</button>
-               </div>
-
-          </article>
-          
+               <div class="container">
+                    <div class="btn">
+                         <button class="btn btn-success" onclick="save()">Save</button>
+                         <button id="print" class="btn btn-primary" onclick="window.print()">Print</button>
+                    </div>
+               </div>               
+          </article>          
      </main>
 
      <footer>
